@@ -126,132 +126,20 @@ import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head';
 import ProjectCard from '../components/home/ProjectCard.vue';
+import { projects } from '../data/projects';
 import { Search, Filter, Code2, ChevronDown, X, SearchX } from 'lucide-vue-next';
 
 const router = useRouter();
 
 useHead({
-  title: 'Mes Projets - Code With Chris',
+  title: 'Réalisations - Chrislain AVOCEGAN',
   meta: [
     { name: 'description', content: 'Explorez le portfolio de projets de Chrislain AVOCEGAN : Applications web, APIs, et sites e-commerce.' }
   ]
 });
 
-// Données des projets (Icon mapping string -> component in ProjectCard)
-const allProjects = ref([
-  {
-    id: 1,
-    slug: "amazone_tchad",
-    title: "Amazone Tchad",
-    description: "Dashboard administrateur avec Laravel 10 et Vue.js 3, gestion utilisateurs et reporting.",
-    image: "/assets/images/amazone.png",
-    tag: "Laravel & Vue.js",
-    tags: ["Dashboard", "Backoffice", "Administration"],
-    technologies: ["Laravel", "Vue.js", "Tailwind CSS"],
-    category: "Application Web",
-    link: "https://amazone-tchad.com/",
-    detailsLink: "/work/amazone_tchad",
-    icon: "LayoutDashboard" 
-  },
-  {
-    id: 2,
-    slug: "school_management",
-    title: "School Management API",
-    description: "API complète pour la gestion scolaire avec Laravel (élèves, profs, notes).",
-    image: "/assets/images/work_image.png",
-    tag: "API Laravel",
-    tags: ["Education", "Backend", "REST API"],
-    technologies: ["Laravel", "MySQL", "JWT"],
-    category: "API",
-    link: "#",
-    detailsLink: "/work/school_management",
-    icon: "Database"
-  },
-  {
-    id: 3,
-    slug: "fsppi",
-    title: "Site FSPPI",
-    description: "Refonte du frontend avec Angular pour une fédération philatélique.",
-    image: "/assets/images/fsppi.PNG",
-    tag: "Angular",
-    tags: ["Association", "Frontend"],
-    technologies: ["Angular", "TypeScript", "SCSS"],
-    category: "Site Web",
-    link: "https://fsppi.org/",
-    detailsLink: "/work/fsppi",
-    icon: "Globe"
-  },
-  {
-    id: 4,
-    slug: "future_transport_expo",
-    title: "Future Transport Expo",
-    description: "Site événementiel WordPress avec billetterie en ligne.",
-    image: "/assets/images/fte.png",
-    tag: "WordPress",
-    tags: ["Événementiel", "Billetterie"],
-    technologies: ["WordPress", "WooCommerce", "Elementor"],
-    category: "Site Événementiel",
-    link: "https://futuretransportexpo.com",
-    detailsLink: "/work/future_transport_expo",
-    icon: "Calendar" // Map to Calendar icon if available or fallback
-  },
-  {
-    id: 5,
-    slug: "gie_holding_group",
-    title: "GIE Holding Group",
-    description: "Site institutionnel WordPress présentant les activités du groupe.",
-    image: "/assets/images/giehgd.png",
-    tag: "WordPress",
-    tags: ["Corporate", "Vitrine"],
-    technologies: ["WordPress", "ACF", "Divi"],
-    category: "Site Institutionnel",
-    link: "https://gieholdinggroupdiama.com",
-    detailsLink: "/work/gie_holding_group",
-    icon: "Briefcase"
-  },
-  {
-    id: 8,
-    slug: "lassissi_itech",
-    title: "LASSISSI iTech",
-    description: "Plateforme e-commerce pour la vente de smartphones et accessoires.",
-    image: "/assets/images/lassissi-itech.PNG",
-    tag: "E-commerce",
-    tags: ["Mobile", "Vente en ligne"],
-    technologies: ["Laravel", "Vue.js", "Mobile Money"],
-    category: "E-commerce",
-    link: "#",
-    detailsLink: "/work/lassissi_itech",
-    icon: "Smartphone"
-  },
-  {
-    id: 9,
-    slug: "byl_in",
-    title: "Byl In",
-    description: "Marketplace de vêtements artisanaux africains.",
-    image: "/assets/images/byl-in.PNG",
-    tag: "E-commerce",
-    tags: ["Mode", "Artisanat"],
-    technologies: ["Laravel", "Vue.js", "Stripe"],
-    category: "E-commerce",
-    link: "#",
-    detailsLink: "/work/byl_in",
-    icon: "ShoppingBag"
-  },
-  {
-    id: 10,
-    slug: "glory_spa",
-    title: "Glory Spa",
-    description: "Site vitrine pour un institut de beauté avec réservation.",
-    image: "/assets/images/glory-spa.PNG",
-    tag: "WordPress",
-    tags: ["Beauté", "Wellness"],
-    technologies: ["WordPress", "Booking Plugin"],
-    category: "Site Vitrine",
-    link: "#",
-    detailsLink: "/work/glory_spa",
-    icon: "Sparkles" // Use Sparkles or similar
-  }
-]);
+// Données des projets : source unique dans src/data/projects.js
+const allProjects = ref(projects);
 
 // Filtres
 const selectedCategory = ref('all');

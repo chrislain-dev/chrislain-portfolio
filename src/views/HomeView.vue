@@ -23,31 +23,31 @@ import WorksSection from '../components/home/WorksSection.vue'
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Code With Chris',
+  title: 'Chrislain AVOCEGAN - Développeur Full-Stack & Analyste-Programmeur',
   meta: [
     {
       name: 'description',
-      content: 'Portfolio de Chrislain AVOCEGAN, développeur web full stack spécialisé en Laravel, Vue.js, et Tailwind CSS.'
+      content: "Développeur full-stack basé à Cotonou. API Laravel et Spring Boot, interfaces Vue.js et React, de l'analyse du besoin à la mise en production."
     },
     {
       name: 'keywords',
-      content: 'Portfolio, Vue.js, Laravel, Tailwind CSS, Développeur Full Stack'
+      content: 'Développeur Full-Stack, Analyste Programmeur, Laravel, Spring Boot, Vue.js, React, Tailwind CSS, Cotonou, Bénin'
     },
     {
       property: 'og:title',
-      content: 'Portfolio - Code With Chris'
+      content: 'Chrislain AVOCEGAN - Développeur Full-Stack & Analyste-Programmeur'
     },
     {
       property: 'og:description',
-      content: 'Découvrez les projets et les compétences de Chris, développeur web full stack.'
+      content: 'Réalisations, parcours et notes de développement autour de Laravel, Spring Boot, Vue.js et React.'
     },
     {
       property: 'og:image',
-      content: 'https://chrislainavocegan.site/preview-image.png'
+      content: 'https://chrislain-portfolio.vercel.app/preview-image.png'
     },
     {
       property: 'og:url',
-      content: 'https://chrislainavocegan.site'
+      content: 'https://chrislain-portfolio.vercel.app'
     }
   ]
 });

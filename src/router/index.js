@@ -17,10 +17,13 @@ const routes = [
   { path: '/works', component: () => import('../views/WorksView.vue') },
   { path: '/resume', component: () => import('../views/ResumeView.vue') },
   { path: '/about', component: () => import('../views/AboutView.vue') },
-  { path: '/posts', component: () => import('../views/Blog/PostsView.vue') },
-  { path: '/post/:id', component: () => import('../views/Blog/PostDetailView.vue'), props: true },
+  { path: '/blog', component: () => import('../views/Blog/BlogView.vue') },
+  { path: '/blog/:slug', component: () => import('../views/Blog/BlogPostView.vue'), props: true },
+  // Anciennes URLs du blog : on redirige pour ne pas casser les liens existants
+  { path: '/posts', redirect: '/blog' },
+  { path: '/post/:id', redirect: '/blog' },
+  { path: '/tag/:id', redirect: '/blog' },
   { path: '/work/:slug', component: () => import('../views/Works/WorkDetailView.vue'), props: true },
-  { path: '/tag/:id', component: () => import('../views/Blog/AllTagsView.vue'), props: true },
   { path: '/settings', component: () => import('../views/Dashboard/SettingsView.vue') },
   { path: '/:pathMatch(.*)*', component: () => import('../views/NotFound.vue') },
 ]

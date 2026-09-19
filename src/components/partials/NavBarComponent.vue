@@ -1,7 +1,8 @@
 <template>
   <!-- Main Floating Navbar Container -->
   <header class="fixed top-4 left-0 right-0 z-50 px-4 flex justify-center animate-fade-down">
-    <nav class="w-full max-w-4xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-white/20 dark:border-slate-700/50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 px-4 py-2.5 flex items-center justify-between">
+    <nav
+      class="w-full max-w-5xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-white/20 dark:border-slate-700/50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 px-4 py-2.5 flex items-center justify-between">
       
       <!-- Logo -->
       <RouterLink to="/" class="flex-shrink-0 ml-2 hover:scale-105 transition-transform" aria-label="Retour à l'accueil">
@@ -11,11 +12,11 @@
       </RouterLink>
 
       <!-- Desktop Navigation -->
-      <ul class="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+      <ul class="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
         <li v-for="link in navLinks" :key="link.path">
           <RouterLink 
             :to="link.path"
-            class="relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300"
+            class="relative px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300"
             :class="isActive(link.path) 
               ? 'bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 shadow-sm' 
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/50 dark:hover:bg-slate-800/50'"
@@ -114,7 +115,7 @@
       </nav>
       
       <div class="mt-auto mb-8 text-center text-xs text-slate-400">
-        &copy; {{ new Date().getFullYear() }} Code With Chris
+        &copy; {{ new Date().getFullYear() }} Chrislain AVOCEGAN
       </div>
     </div>
   </Transition>
@@ -126,7 +127,7 @@ import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import { 
   Menu, X, Sun, Moon, ChevronDown, 
-  Home, User, FileText, Send, Terminal 
+  Home, User, FileText, Send, Terminal, Layers 
 } from 'lucide-vue-next';
 
 const { t, locale } = useI18n();
@@ -136,22 +137,17 @@ const theme = ref(localStorage.getItem('theme') || 'light');
 const dropdownOpen = ref(false);
 const mobileMenuOpen = ref(false);
 const locales = ref(locale.value);
-const isDevelopment = import.meta.env.VITE_APP_ENV === 'development'
 
 // Navigation Data
 const navLinks = computed(() => {
-  const links = [
+  return [
     { path: '/', label: t('home.navBar.home'), icon: Home },
     { path: '/about', label: t('home.navBar.about'), icon: User },
+    { path: '/works', label: t('home.navBar.works'), icon: Layers },
+    { path: '/blog', label: t('home.navBar.blog'), icon: Terminal },
     { path: '/resume', label: t('home.navBar.resume'), icon: FileText },
     { path: '/contact', label: t('home.navBar.contact'), icon: Send },
   ];
-  
-  if (isDevelopment) {
-    links.splice(3, 0, { path: '/posts', label: 'Blog', icon: Terminal });
-  }
-  
-  return links;
 });
 
 // Helpers

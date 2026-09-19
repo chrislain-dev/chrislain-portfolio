@@ -73,7 +73,7 @@ class TextScramble {
 const phrases = computed(() => [
   t('home.heroe.hi'),
   t('home.heroe.im'),
-  t('home.heroe.callMe')
+  t('home.heroe.fullName')
 ]);
 
 const counter = ref(0);

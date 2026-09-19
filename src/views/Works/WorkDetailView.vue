@@ -491,6 +491,100 @@ const projects = ref([
     category: "Site Vitrine",
     link: "#",
     detailsLink: "/work/glory_spa",
+  },
+  {
+    id: 11,
+    slug: "stock_management",
+    title: "Application de Gestion de Stock",
+    siteName: "Gestion de Stock",
+    description: `
+      <p>Application de suivi de stock conçue pour des commerces et petites structures qui géraient jusque-là leur inventaire sur papier ou tableur. L'enjeu principal : un stock affiché toujours justifiable, mouvement par mouvement.</p>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">✔ Fonctionnalités</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Enregistrement des entrées et sorties avec motif et utilisateur responsable</li>
+        <li>Inventaire par dépôt et historique complet par produit</li>
+        <li>Alertes automatiques de seuil minimum</li>
+        <li>Rapports de mouvements exportables en Excel et PDF</li>
+        <li>Gestion des rôles : gérant, magasinier, consultation seule</li>
+      </ul>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">⚙ Choix techniques</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Modélisation événementielle : le stock est calculé à partir des mouvements, jamais stocké tel quel</li>
+        <li>Transactions et verrous en base pour éviter les stocks négatifs en accès concurrent</li>
+        <li>Interface Vue.js pensée pour la saisie rapide au clavier</li>
+      </ul>
+    `,
+    image: "/assets/images/coming_soon.webp",
+    tag: "Laravel & Vue.js",
+    tags: ["Gestion", "Métier", "Inventaire"],
+    technologies: ["Laravel", "Vue.js", "MySQL", "Tailwind CSS"],
+    category: "Application Web",
+    link: "#",
+    detailsLink: "/work/stock_management",
+  },
+  {
+    id: 12,
+    slug: "springboot_api",
+    title: "API métier Spring Boot",
+    siteName: "API Spring Boot",
+    description: `
+      <p>API REST servant de socle à une application de gestion interne : elle centralise les données métier et alimente à la fois une interface web React et des exports automatisés.</p>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">✔ Fonctionnalités</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Authentification JWT et gestion fine des rôles</li>
+        <li>Endpoints versionnés et documentés avec Swagger / OpenAPI</li>
+        <li>Validation des entrées et gestion centralisée des erreurs</li>
+        <li>Pagination, filtres et tri sur l'ensemble des ressources</li>
+      </ul>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">⚙ Architecture</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Découpage strict contrôleur / service / repository, avec DTO en entrée et en sortie</li>
+        <li>Spring Data JPA et requêtes optimisées pour éviter les N+1</li>
+        <li>Conteneurisation Docker pour aligner les environnements</li>
+      </ul>
+    `,
+    image: "/assets/images/coming_soon.webp",
+    tag: "Spring Boot",
+    tags: ["Backend", "REST API", "Java"],
+    technologies: ["Spring Boot", "Java", "PostgreSQL", "Docker"],
+    category: "API",
+    link: "#",
+    detailsLink: "/work/springboot_api",
+  },
+  {
+    id: 13,
+    slug: "vitrine_tpe",
+    title: "Sites vitrines pour TPE",
+    siteName: "Sites vitrines TPE",
+    description: `
+      <p>Série de sites de présentation réalisés pour de petites entreprises et des indépendants. Même objectif à chaque fois : être trouvable, inspirer confiance, et rester modifiable par le client sans développeur.</p>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">✔ Ce que comprend chaque site</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Pages services, réalisations et contact, adaptées au métier du client</li>
+        <li>Back-office simple pour modifier textes, images et coordonnées</li>
+        <li>Formulaire de contact relié à l'e-mail et à WhatsApp</li>
+        <li>Optimisation SEO de base et temps de chargement soignés</li>
+        <li>Affichage mobile traité en priorité</li>
+      </ul>
+
+      <h4 class="text-lg font-semibold mt-6 mb-2">⚙ Accompagnement</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Recueil du besoin et cadrage du contenu avec le client</li>
+        <li>Mise en ligne, nom de domaine et prise en main du back-office</li>
+      </ul>
+    `,
+    image: "/assets/images/coming_soon.webp",
+    tag: "Site vitrine",
+    tags: ["Vitrine", "TPE", "Back-office"],
+    technologies: ["Laravel", "Tailwind CSS", "Alpine.js"],
+    category: "Site Vitrine",
+    link: "#",
+    detailsLink: "/work/vitrine_tpe",
   }
 ]);
 

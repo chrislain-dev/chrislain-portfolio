@@ -243,7 +243,7 @@ const handleSubmit = () => {
 };
 
 useHead({
-  title: 'Contact - Code With Chris',
+  title: 'Contact - Chrislain AVOCEGAN',
   meta: [
     {
       name: 'description',
@@ -251,11 +251,11 @@ useHead({
     },
     {
       name: 'keywords',
-      content: 'Contact, Code With Chris, Chrislain AVOCEGAN, Laravel, Vue.js, Tailwind CSS, Développeur Full Stack, Collaborer, Projets web'
+      content: 'Contact, Chrislain AVOCEGAN, Laravel, Spring Boot, Vue.js, React, Développeur Full-Stack, Cotonou, Bénin'
     },
     {
       property: 'og:title',
-      content: 'Contact - Code With Chris'
+      content: 'Contact - Chrislain AVOCEGAN'
     },
     {
       property: 'og:description',
@@ -263,11 +263,11 @@ useHead({
     },
     {
       property: 'og:image',
-      content: 'https://chrislainavocegan.site/preview-image.png'
+      content: 'https://chrislain-portfolio.vercel.app/preview-image.png'
     },
     {
       property: 'og:url',
-      content: 'https://chrislainavocegan.site/contact'
+      content: 'https://chrislain-portfolio.vercel.app/contact'
     },
     {
       property: 'og:type',

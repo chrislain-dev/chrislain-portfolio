@@ -5,21 +5,22 @@
       "about": "About",
       "resume": "Resume",
       "contact": "Contact",
-      "works": "Works"
+      "works": "Works",
+      "blog": "Blog"
     },
     "heroe": {
       "hi": "Hey, ",
       "im": "I am Chrislain",
       "fullName": "Chrislain AVOCEGAN",
-      "callMe": "Call Me Zylo",
-      "nickName": "Zylo",
-      "myWork": "Full Stack Developer",
-      "introDescription": "Your full-stack developer and Laravel expert. I spend my nights (and often my days) creating innovative web solutions with <RouterLink to='/projects' class='text-blue-500'>Laravel, Vue.js</RouterLink>, and <RouterLink to='/technologie' class='text-blue-500'>Tailwind CSS</RouterLink>, transforming ideas into intuitive, functional and aesthetic digital experiences. Passionate about code logic, my motivation comes from the complexity of each <RouterLink to='#works' class='text-blue-500 hover:underline hover:underline-offset-2'>project</RouterLink>. With a strong taste for code aesthetics, I strive to create fluid and efficient code. I invite you to check out my <RouterLink to='/blog' class='text-blue-500 hover:underline hover:underline-offset-2'>blog</RouterLink> to learn more about my skills and experiences.",
-      "myResume": "My Resume"
+      "myWork": "Full-Stack Developer & Systems Analyst",
+      "introDescription": "I design and build custom web applications, from gathering requirements to production. On the back end, I build solid APIs with <strong>Laravel</strong> and <strong>Spring Boot</strong>; on the front end, I bring interfaces to life with <strong>Vue.js</strong>, <strong>React</strong> and <strong>Tailwind CSS</strong>. What interests me is the problem behind the project: understanding the business, modelling the data, then shipping something simple to use and easy to maintain. Take a look at my <a href=\"/works\" class=\"link-inline\">work</a> or drop by the <a href=\"/blog\" class=\"link-inline\">blog</a>, where I write about what I learn along the way.",
+      "myResume": "My Resume",
+      "availability": "Available for new projects",
+      "viewWorks": "View my work"
     },
     "skills": {
       "title": "Skills",
-      "description": "My technical skills in web development",
+      "description": "The technologies I work with every day, from the data model to the interface.",
       "levels": {
         "advanced": "Advanced",
         "intermediate": "Intermediate",
@@ -29,7 +30,7 @@
     "projects": {
       "title": "Projects",
       "seeMore": "See More",
-      "description": "Here are some projects I've recently worked on.",
+      "description": "A selection of shipped projects: business applications, APIs and marketing sites.",
       "gie": {
         "title": "GIE Holding Group Diama",
         "description": "Corporate website built with WordPress and Elementor for an intuitive interface, offering a dynamic and professional presentation of the company's services and projects.",
@@ -54,41 +55,45 @@
     "footer": {
       "letsWork": "LET'S WORK",
       "together": "TOGETHER",
-      "description": "I am a passionate web developer who loves to create unique digital experiences. I am always looking for new challenges and opportunities to learn and grow.",
+      "description": "Full-stack developer building web applications that are reliable and easy to evolve. Always up for a project that matters.",
       "copyright": "All rights reserved.",
       "makeAnAppointment": "Schedule an Appointment"
     }
   },
   "about": {
     "title": "About Me",
-    "description": "I am a passionate web developer who loves to create unique digital experiences. I am always looking for new challenges and opportunities to learn and grow.",
-    "longDescription": "I am Chrislain Avocegan, also known as Zylo. A passionate full-stack web developer, I combine technical expertise and creativity to design modern, efficient and intuitive web solutions. Specialized in Laravel, Vue.js, PHP, Tailwind CSS and WordPress, I have collaborated on various projects, ranging from showcase websites to high-performance web applications for businesses and individuals. My journey has allowed me to master the entire development process, from initial design to final deployment, while ensuring an optimal user experience. What sets me apart: Technical skills: An in-depth knowledge of back-end and front-end technologies, combined with a sensitivity for UX/UI design. Successful projects: I have worked on projects such as NH High School, a school management application, or Glory's Nails, an elegant website for a women's beauty salon. Continuous learning: Passionate about innovation, I spend time learning new technologies and techniques to constantly improve my skills. My approach: My goal is to solve complex problems with simple, elegant and functional solutions, whether for a startup seeking visibility or an established company looking to optimize its performance. Through these processes, I strive to offer personalized services tailored to each need. When I'm not coding, I enjoy activities like rollerblading, reading inspiring manga or creating graphic designs.",
+    "description": "Full-stack developer based in Cotonou. I turn business needs into reliable web applications, from the data model to the interface.",
+    "longDescription": "My name is Chrislain Avocegan. I'm a full-stack developer and systems analyst with a bachelor's degree in software engineering. My work rarely starts with code: it starts with a conversation, a business process to understand and data to model properly. Then comes the technical part — a structured API with Laravel or Spring Boot, a clear interface with Vue.js or React, and a database designed to last.\n\nI currently work at WEBCOM SASU on the analysis, design and development of business applications, as well as their maintenance in production. Alongside that, I've supported small businesses and freelancers: stock management, e-commerce platforms with mobile money payments, marketing sites with a back office.\n\nWhat I look for in a project is clarity: code the next developer can read, screens users understand without training, and technical choices I can explain in plain words. Away from the keyboard, I skate, I read, and I tinker with interfaces in Figma.",
     "myResume": "My Resume",
     "sections": {
       "workedYears": {
         "title": "Years of experience",
-        "description": "I have worked several years in web development, particularly using Laravel and Vue.js for exciting projects."
+        "description": "From back-end development to interfaces, in agencies, in-house and freelance."
       },
       "workedProjects": {
         "title": "Projects worked on",
-        "description": "I have worked on more than 11 projects, including dynamic websites and full-stack web applications."
+        "description": "Business applications, REST APIs, e-commerce platforms and marketing sites shipped to production."
       },
       "certifications": {
         "title": "Certifications",
-        "description": "I have obtained several web certifications, particularly using Laravel and Vue.js for exciting projects."
+        "description": "Courses and certifications in web development and software engineering."
       },
       "happyClients": {
         "title": "Happy clients",
-        "description": "I have worked on more than 11 projects, including dynamic websites and full-stack web applications for international clients"
+        "description": "Companies, associations and freelancers supported across Benin, Senegal and Chad."
       }
-    }
+    },
+    "story": "My story",
+    "readMore": "Read more",
+    "openToWork": "Open to opportunities"
   },
   "resume": {
     "title": "Resume",
     "downloadButton": "Download",
     "header": {
       "name": "Chrislain Avocegan",
-      "title": "Full-Stack Developer"
+      "title": "Full-Stack Developer & Systems Analyst",
+      "tagline": "Laravel and Spring Boot APIs, Vue.js and React interfaces. From requirements to production maintenance."
     },
     "contact": {
       "title": "Contact",
@@ -120,13 +125,39 @@
       "title": "Professional Experience",
       "items": [
         {
-          "role": "Laravel Project Manager",
+          "role": "Full-Stack Developer (Spring Boot & Laravel)",
+          "company": "WEBCOM SASU",
+          "period": "March 2026 - Present",
+          "details": [
+            "Requirements analysis and technical design of business applications",
+            "Design and development of REST APIs with Spring Boot and Laravel",
+            "Front-end development with React",
+            "Database modelling and query optimisation",
+            "Corrective and evolutive maintenance of production applications",
+            "Technical documentation and code review"
+          ]
+        },
+        {
+          "role": "Freelance Full-Stack Developer",
+          "company": "Self-employed - Cotonou, Benin",
+          "period": "April 2025 - February 2026",
+          "details": [
+            "Stock management application: stock movements, inventory, low-stock alerts and reports",
+            "Marketing websites for small businesses, with a back office to update content",
+            "Mobile money and card payment integration on online stores",
+            "Taking over existing applications: bug fixing, migration and optimisation",
+            "Requirements gathering, quoting, delivery and user training"
+          ]
+        },
+        {
+          "role": "Laravel Project Lead",
           "company": "Nahema-Heaven Co.",
           "period": "February 2023 - April 2025",
           "details": [
-            "Project plan development and schedule management",
+            "Project planning and schedule management",
+            "Laravel back-end development and Vue.js front-end integration",
             "Resource and budget management",
-            "Risk management (risk identification, handling unexpected events)"
+            "Risk management (identification and mitigation)"
           ]
         },
         {
@@ -134,19 +165,18 @@
           "company": "Rohaya Holding, Rufisque",
           "period": "September 2022 - January 2023",
           "details": [
-            "Creation of mockups using Figma",
-            "Creation of responsive websites using WordPress",
-            "Participation in project follow-up meetings",
-            "Monitoring project progress in collaboration with relevant teams"
+            "Designing mockups with Figma",
+            "Building responsive websites with WordPress",
+            "Tracking project progress with the teams involved"
           ]
         },
         {
-          "role": "Intern Project Manager",
+          "role": "Project Assistant Intern",
           "company": "PMD Developer, Dakar",
           "period": "February 2020 - June 2022",
           "details": [
-            "Assistance in back-end project development with PHP",
-            "Participation in the development of project plans (schedules, milestones, and deliverables)"
+            "Assisting with back-end development in PHP",
+            "Contributing to project plans (schedules, milestones, deliverables)"
           ]
         }
       ]
@@ -154,30 +184,51 @@
     "freelance": {
       "title": "Freelance Achievements",
       "items": [
-        "Enash Solutions: Built with Nuxt.js, NestJS API, S3, and Stripe (Currently being finalized)",
-        "Bylin: Complete E-commerce site development with payment integration (Fedapay API) using Filament (Laravel) and Nuxt.js",
-        "lassissi.tech: Mini e-commerce site built with Laravel and Vue.js",
-        "Admin dashboard for Amazone-Tchad: Booking management system built with Laravel and Vue.js",
-        "API design for a booking platform: Back-end development with Laravel",
-        "Front-end development for FSSPI.org: Built with Angular",
-        "Personal portfolio: Developed with Vue.js 3 and Express.js"
+        "Stock management: application tracking stock movements, inventory and low-stock alerts (Laravel + Vue.js)",
+        "Byl In: full e-commerce site with integrated payments (FedaPay API), Filament (Laravel) and Nuxt.js",
+        "LASSISSI iTech: online store for smartphones and consoles, with device trade-in (Laravel + Inertia)",
+        "Amazone Tchad: booking management back office (Laravel + Vue.js)",
+        "Enash Solutions: platform built with Nuxt.js, a NestJS API, S3 and Stripe",
+        "FSPPI.org: front-end development with Angular",
+        "Marketing sites for small businesses: service pages and a content back office",
+        "Personal portfolio: built with Vue.js 3, Tailwind CSS and Vite"
       ]
     },
     "professionalSkills": {
       "title": "Professional Skills",
-      "items": ["Laravel", "Vue.js", "Nuxt.js", "NestJS", "WordPress", "Figma"]
+      "items": [
+        "Laravel",
+        "Spring Boot",
+        "Vue.js",
+        "React",
+        "NestJS",
+        "Tailwind CSS",
+        "MySQL",
+        "PostgreSQL",
+        "Git",
+        "Figma"
+      ]
     },
     "softSkills": {
       "title": "Soft Skills",
-      "items": ["Organizational skills", "Communication", "Leadership", "Project management software"]
+      "items": [
+        "Analysis and design",
+        "Client communication",
+        "Autonomy",
+        "Teamwork",
+        "Project management"
+      ]
     },
     "languages": {
       "title": "Languages",
-      "items": ["French", "English"]
+      "items": [
+        "French (native)",
+        "English (professional)"
+      ]
     },
     "skills": {
       "title": "Skills",
-      "description": "My technical skills in web development",
+      "description": "The technologies I use every day",
       "levels": {
         "advanced": "Advanced",
         "intermediate": "Intermediate",
@@ -188,9 +239,9 @@
       "title": "Interests",
       "items": [
         "Reading",
-        "Rollerblading",
+        "Skating",
         "Photography",
-        "Sports"
+        "Sport"
       ]
     },
     "dialog": {
@@ -200,6 +251,15 @@
       "english": "English",
       "submitButton": "Download",
       "closeButton": "Close"
+    },
+    "hardSkills": {
+      "title": "Tech stack",
+      "items": [
+        "Back-end: Laravel, Spring Boot, NestJS, PHP, Java",
+        "Front-end: Vue.js, React, Nuxt.js, Tailwind CSS",
+        "Databases: MySQL, PostgreSQL",
+        "Tools: Git, GitHub, Postman, Figma, Docker"
+      ]
     }
   },
   "contact": {
@@ -225,12 +285,33 @@
     }
   },
   "blog": {
+    "title": "Blog",
+    "subtitle": "Developer notes: what I learn about Laravel, Spring Boot, Vue and React, written while it's still fresh.",
     "loading": "Loading",
+    "readingTime": "min read",
+    "readArticle": "Read the article",
+    "allTags": "All topics",
+    "backToBlog": "Back to the blog",
+    "relatedPosts": "Read next",
+    "search": "Search an article...",
+    "empty": {
+      "title": "No articles yet",
+      "description": "The first articles are on their way. Check back soon."
+    },
+    "noResults": {
+      "title": "No matching article",
+      "description": "Try another keyword or go back to the full list.",
+      "reset": "Reset"
+    },
+    "notFound": {
+      "title": "Article not found",
+      "description": "This article doesn't exist or has been moved."
+    },
     "post": {
-      "error": "An error occurred while loading Articles. <br>Please check your Connection..."
+      "error": "Something went wrong while loading the articles."
     },
     "tag": {
-      "error": "An error occurred while loading Categories. <br>Please check your Connection..."
+      "error": "Something went wrong while loading the topics."
     }
   },
   "notFound": {

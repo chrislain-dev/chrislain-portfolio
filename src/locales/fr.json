@@ -5,21 +5,22 @@
       "about": "À propos",
       "resume": "Mon CV",
       "contact": "Contact",
-      "works": "Réalisations"
+      "works": "Réalisations",
+      "blog": "Blog"
     },
     "heroe": {
       "hi": "Hey, ",
       "im": "Je suis Chrislain",
       "fullName": "Chrislain AVOCEGAN",
-      "callMe": "Appele Moi Zylo",
-      "nickName": "Zylo",
-      "myWork": "Développeur Full Stack",
-      "introDescription": "Votre développeur full-stack et expert Laravel. Je passe mes nuits (et souvent mes journées) à créer des solutions web innovantes avec <RouterLink to='/projects' class='text-blue-500'>Laravel, Vue.js</RouterLink>, et <RouterLink to='/technologie' class='text-blue-500'>Tailwind CSS</RouterLink>, transformant des idées en expériences digitales intuitives, fonctionnelles et esthétiques. Passionné par la logique du code, ma motivation naît de la complexité de chaque <RouterLink to='#works' class='text-blue-500 hover:underline hover:underline-offset-2'>projet</RouterLink>. Avec un goût prononcé pour l'esthétique du code, je m'efforce de créer un code fluide et efficace. Je vous invite à consulter mon <RouterLink to='/blog' class='text-blue-500 hover:underline hover:underline-offset-2'>blog</RouterLink> pour en savoir plus sur mes compétences et mes expériences. ",
-      "myResume": "Mon CV"
+      "myWork": "Développeur Full-Stack & Analyste-Programmeur",
+      "introDescription": "Je conçois et développe des applications web sur mesure, de l'analyse du besoin jusqu'à la mise en production. Côté back-end, je construis des API robustes avec <strong>Laravel</strong> et <strong>Spring Boot</strong>&nbsp;; côté front-end, je donne vie aux interfaces avec <strong>Vue.js</strong>, <strong>React</strong> et <strong>Tailwind CSS</strong>. Ce qui m'intéresse, c'est le problème derrière le projet&nbsp;: comprendre le métier, modéliser les données, puis livrer une solution simple à utiliser et facile à maintenir. Jetez un œil à mes <a href=\"/works\" class=\"link-inline\">réalisations</a> ou passez sur le <a href=\"/blog\" class=\"link-inline\">blog</a>, où je partage ce que j'apprends en chemin.",
+      "myResume": "Mon CV",
+      "availability": "Disponible pour de nouveaux projets",
+      "viewWorks": "Voir mes réalisations"
     },
     "skills": {
       "title": "Compétences",
-      "description": "Mes compétences techniques en développement web",
+      "description": "Les technologies avec lesquelles je travaille au quotidien, du modèle de données jusqu'à l'interface.",
       "levels": {
         "advanced": "Avancé",
         "intermediate": "Intermédiaire",
@@ -29,7 +30,7 @@
     "projects": {
       "title": "Réalisations",
       "seeMore": "Voir Plus",
-      "description": "Voici quelques projets que j'ai travaillé récemment.",
+      "description": "Une sélection de projets livrés : applications métier, API et sites vitrines.",
       "gie": {
         "title": "GIE Holding Group Diama",
         "description": "Site web corporatif réalisé avec WordPress et Elementor pour une interface intuitive, offrant une présentation dynamique et professionnelle des services et projets de l'entreprise.",
@@ -54,41 +55,45 @@
     "footer": {
       "letsWork": "TRAVAILLONS",
       "together": "ENSEMBLE",
-      "description": "Je suis un développeur web passionné qui aime créer des expériences digitales uniques. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et grandir.",
+      "description": "Développeur full-stack, je construis des applications web fiables et faciles à faire évoluer. Toujours partant pour un projet qui a du sens.",
       "copyright": "Tous droits réservés.",
       "makeAnAppointment": "Agender un Rendez-vous"
     }
   },
   "about": {
     "title": "A propos de moi",
-    "description": "Je suis un développeur web passionné qui aime créer des expériences digitales uniques. Je suis toujours à la recherche de nouveaux défis et d'opportunités pour apprendre et grandir.",
-    "longDescription": "Je suis Chrislain Avocegan, aussi connu sous le nom de Zylo. Développeur web full-stack passionné, j'allie expertise technique et créativité pour concevoir des solutions web modernes, performantes et intuitives. Spécialisé en Laravel, Vue.js, PHP, Tailwind CSS et WordPress, j'ai collaboré à divers projets, allant de sites web de présentation à des applications web performantes pour entreprises et particuliers. Mon parcours m'a permis de maîtriser l'intégralité du processus de développement, de la conception initiale au déploiement final, tout en garantissant une expérience utilisateur optimale. Ce qui me distingue : Compétences techniques : Une connaissance approfondie des technologies back-end et front-end, associée à une sensibilité pour le design UX/UI. Projets réussis : J'ai travaillé sur des projets tels que NH High School, une application de gestion scolaire, ou Glory's Nails, un site web élégant pour un salon de beauté féminin. Apprentissage continu : Passionné par l'innovation, je consacre du temps à l'apprentissage de nouvelles technologies et techniques pour améliorer constamment mes compétences. Mon approche : Mon objectif est de résoudre des problèmes complexes avec des solutions simples, élégantes et fonctionnelles, que ce soit pour une startup en quête de visibilité ou une entreprise établie cherchant à optimiser ses performances. Grâce à ses processus, je m'efforce d'offrir des services personnalisés et adaptés à chaque besoin. Lorsque je ne code pas, j'aime pratiquer des activités comme le roller, lire des mangas inspirants ou créer des designs graphiques.",
+    "description": "Développeur full-stack basé à Cotonou. Je transforme des besoins métier en applications web fiables, de la modélisation des données jusqu'à l'interface.",
+    "longDescription": "Je m'appelle Chrislain Avocegan. Je suis développeur full-stack et analyste-programmeur, titulaire d'une licence en génie logiciel. Mon travail commence rarement par du code : il commence par une conversation, un processus métier à comprendre et des données à modéliser correctement. Vient ensuite la partie technique — une API structurée avec Laravel ou Spring Boot, une interface claire avec Vue.js ou React, et une base de données pensée pour durer.\n\nJ'interviens aujourd'hui chez WEBCOM SASU sur l'analyse, la conception et le développement d'applications métier, ainsi que sur leur maintenance en production. En parallèle, j'ai accompagné en freelance des TPE et des indépendants : gestion de stock, plateformes e-commerce avec paiement mobile money, sites vitrines avec back-office.\n\nCe que je recherche dans un projet, c'est la clarté : un code lisible par la personne qui reprendra le projet après moi, des écrans que l'utilisateur comprend sans formation, et des choix techniques que je peux expliquer simplement. En dehors du clavier, je fais du roller, je lis et je bricole des interfaces sur Figma.",
     "myResume": "Mon CV",
     "sections": {
       "workedYears": {
         "title": "Années d'expériences",
-        "description": "J'ai travaillé plusieurs années dans le domaine du développement web, notamment en utilisant Laravel et Vue.js pour des projets passionnants."
+        "description": "Du développement back-end aux interfaces, en agence, en entreprise et en freelance."
       },
       "workedProjects": {
         "title": "Projets travaillé",
-        "description": "J'ai travaillé sur plus de 11 projets, notamment des sites web dynamiques et des applications web full-stack."
+        "description": "Applications métier, API REST, plateformes e-commerce et sites vitrines livrés en production."
       },
       "certifications": {
         "title": "Certifications",
-        "description": "J'ai obtenu plusieurs certifications pour le web, notamment en utilisant Laravel et Vue.js pour des projets passionnants."
+        "description": "Formations et certifications suivies en développement web et en génie logiciel."
       },
       "happyClients": {
         "title": "Clients satisfaits",
-        "description": "J'ai travaille sur plus de 11 projets, notamment des sites web dynamiques et des applications web full-stack pour des clients internationaux"
+        "description": "Entreprises, associations et indépendants accompagnés au Bénin, au Sénégal et au Tchad."
       }
-    }
+    },
+    "story": "Mon parcours",
+    "readMore": "Lire la suite",
+    "openToWork": "Ouvert aux opportunités"
   },
   "resume": {
     "title": "CV",
     "downloadButton": "Télécharger",
     "header": {
       "name": "Chrislain Avocegan",
-      "title": "Développeur Full-Stack"
+      "title": "Développeur Full-Stack & Analyste-Programmeur",
+      "tagline": "API Laravel et Spring Boot, interfaces Vue.js et React. De l'analyse du besoin à la maintenance en production."
     },
     "contact": {
       "title": "Contact",
@@ -120,13 +125,39 @@
       "title": "Expérience Professionnelle",
       "items": [
         {
+          "role": "Développeur Full-Stack (Spring Boot & Laravel)",
+          "company": "WEBCOM SASU",
+          "period": "Mars 2026 - Aujourd'hui",
+          "details": [
+            "Analyse des besoins et conception technique des applications métier",
+            "Conception et développement d'API REST avec Spring Boot et Laravel",
+            "Développement des interfaces web avec React",
+            "Modélisation des bases de données et optimisation des requêtes",
+            "Maintenance corrective et évolutive des applications en production",
+            "Rédaction de la documentation technique et revue de code"
+          ]
+        },
+        {
+          "role": "Développeur Full-Stack Freelance",
+          "company": "Indépendant - Cotonou, Bénin",
+          "period": "Avril 2025 - Février 2026",
+          "details": [
+            "Application de gestion de stock : entrées/sorties, inventaire, alertes de seuil et rapports",
+            "Sites vitrines pour TPE et petites entreprises, avec back-office de mise à jour du contenu",
+            "Intégration de paiements mobile money et carte bancaire sur des boutiques en ligne",
+            "Reprise d'applications existantes : correction de bugs, migration et optimisation",
+            "Recueil du besoin, chiffrage, livraison et formation des utilisateurs"
+          ]
+        },
+        {
           "role": "Chargé de Projet Laravel",
           "company": "Nahema-Heaven Co.",
           "period": "Février 2023 - Avril 2025",
           "details": [
             "Élaboration du plan de projet et gestion des calendriers",
+            "Développement back-end Laravel et intégration front-end Vue.js",
             "Gestion des ressources et du budget",
-            "Gestion des risques (identification et réactions aux imprévus)"
+            "Gestion des risques (identification et réaction aux imprévus)"
           ]
         },
         {
@@ -136,8 +167,7 @@
           "details": [
             "Élaboration de maquettes avec Figma",
             "Création de sites web responsive avec WordPress",
-            "Participation aux réunions de suivi de projet",
-            "Suivi de l'avancement des projets en collaboration avec les équipes concernées"
+            "Suivi de l'avancement des projets avec les équipes concernées"
           ]
         },
         {
@@ -145,8 +175,8 @@
           "company": "PMD Developer, Dakar",
           "period": "Février 2020 - Juin 2022",
           "details": [
-            "Assistance au développement de projets back-end avec PHP",
-            "Participation à l'élaboration des plans de projet (calendriers, jalons et livrables)"
+            "Assistance au développement back-end avec PHP",
+            "Participation à l'élaboration des plans de projet (calendriers, jalons, livrables)"
           ]
         }
       ]
@@ -154,30 +184,51 @@
     "freelance": {
       "title": "Réalisations Freelance",
       "items": [
-        "Enash Solutions : Développé avec Nuxt.js, API NestJS, S3 et Stripe (En cours de finalisation)",
-        "Bylin : Développement complet d'un site E-commerce avec intégration de paiement (API Fedapay) utilisant Filament (Laravel) et Nuxt.js",
-        "lassissi.tech : Mini site e-commerce développé avec Laravel et Vue.js",
-        "Dashboard admin pour Amazone-Tchad : Système de gestion de réservations développé avec Laravel et Vue.js",
-        "Conception d'API pour une plateforme de réservation : Développement back-end avec Laravel",
-        "Développement front-end pour FSSPI.org : Développé avec Angular",
-        "Portfolio personnel : Développé avec Vue.js 3 et Express.js"
+        "Gestion de stock : application de suivi des entrées/sorties, inventaire et alertes de seuil (Laravel + Vue.js)",
+        "Byl In : site e-commerce complet avec paiement intégré (API FedaPay), Filament (Laravel) et Nuxt.js",
+        "LASSISSI iTech : boutique en ligne de smartphones et consoles, avec reprise d'appareils (Laravel + Inertia)",
+        "Amazone Tchad : back-office de gestion des réservations (Laravel + Vue.js)",
+        "Enash Solutions : plateforme développée avec Nuxt.js, API NestJS, S3 et Stripe",
+        "FSPPI.org : développement du front-end avec Angular",
+        "Sites vitrines pour TPE : présentation des services et back-office de mise à jour du contenu",
+        "Portfolio personnel : développé avec Vue.js 3, Tailwind CSS et Vite"
       ]
     },
     "professionalSkills": {
       "title": "Compétences Professionnelles",
-      "items": ["Laravel", "Vue.js", "Nuxt.js", "NestJS", "WordPress", "Figma"]
+      "items": [
+        "Laravel",
+        "Spring Boot",
+        "Vue.js",
+        "React",
+        "NestJS",
+        "Tailwind CSS",
+        "MySQL",
+        "PostgreSQL",
+        "Git",
+        "Figma"
+      ]
     },
     "softSkills": {
       "title": "Compétences Douces",
-      "items": ["Compétences organisationnelles", "Communication", "Leadership", "Logiciels de gestion de projet"]
+      "items": [
+        "Analyse et conception",
+        "Communication client",
+        "Autonomie",
+        "Travail en équipe",
+        "Gestion de projet"
+      ]
     },
     "languages": {
       "title": "Langues",
-      "items": ["Français", "Anglais"]
+      "items": [
+        "Français (langue maternelle)",
+        "Anglais (professionnel)"
+      ]
     },
     "skills": {
       "title": "Compétences",
-      "description": "Mes compétences techniques en développement web",
+      "description": "Les technologies que j'utilise au quotidien",
       "levels": {
         "advanced": "Avancé",
         "intermediate": "Intermédiaire",
@@ -188,7 +239,7 @@
       "title": "Centres d'Intérêt",
       "items": [
         "Lecture",
-        "Roller-blade",
+        "Roller",
         "Photographie",
         "Sport"
       ]
@@ -200,6 +251,15 @@
       "english": "Anglais",
       "submitButton": "Télécharger",
       "closeButton": "Fermer"
+    },
+    "hardSkills": {
+      "title": "Stack technique",
+      "items": [
+        "Back-end : Laravel, Spring Boot, NestJS, PHP, Java",
+        "Front-end : Vue.js, React, Nuxt.js, Tailwind CSS",
+        "Bases de données : MySQL, PostgreSQL",
+        "Outils : Git, GitHub, Postman, Figma, Docker"
+      ]
     }
   },
   "contact": {
@@ -225,12 +285,33 @@
     }
   },
   "blog": {
+    "title": "Blog",
+    "subtitle": "Notes de développement : ce que j'apprends sur Laravel, Spring Boot, Vue et React, écrit pendant que c'est encore frais.",
     "loading": "Chargement en cours",
+    "readingTime": "min de lecture",
+    "readArticle": "Lire l'article",
+    "allTags": "Tous les sujets",
+    "backToBlog": "Retour au blog",
+    "relatedPosts": "À lire ensuite",
+    "search": "Rechercher un article...",
+    "empty": {
+      "title": "Aucun article pour le moment",
+      "description": "Les premiers articles arrivent bientôt. Revenez faire un tour."
+    },
+    "noResults": {
+      "title": "Aucun article ne correspond",
+      "description": "Essayez un autre mot-clé ou revenez à la liste complète.",
+      "reset": "Réinitialiser"
+    },
+    "notFound": {
+      "title": "Article introuvable",
+      "description": "Cet article n'existe pas ou a été déplacé."
+    },
     "post": {
-      "error": "Une erreur s'est produite lors du chargement des Articles. <br>Veuillez vérifier votre Connexion..."
+      "error": "Une erreur s'est produite lors du chargement des articles."
     },
     "tag": {
-      "error": "Une erreur s'est produite lors du chargement des Catégories. <br>Veuillez vérifier votre Connexion..."
+      "error": "Une erreur s'est produite lors du chargement des catégories."
     }
   },
   "notFound": {

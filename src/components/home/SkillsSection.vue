@@ -27,7 +27,8 @@
         <div class="relative z-10 flex flex-col items-center text-center gap-4">
           <!-- Icon Container -->
           <div class="w-16 h-16 p-3 bg-slate-50 dark:bg-slate-900 rounded-xl shadow-inner group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-            <img :src="skill.icon" :alt="skill.name" class="w-10 h-10 object-contain" loading="lazy">
+            <img :src="skill.icon" :alt="skill.name" class="w-10 h-10 object-contain" loading="lazy"
+                 @error="handleImageError">
           </div>
           
           <div>
@@ -51,6 +52,11 @@ import { Cpu } from 'lucide-vue-next'
 
 const { t } = useI18n()
 
+// Si un logo n'est plus disponible, on masque l'image plutôt que d'afficher une icône cassée.
+const handleImageError = (event) => {
+  event.target.style.display = 'none'
+}
+
 // Fonction pour styliser le badge selon le niveau
 const getLevelClasses = (level) => {
   if (level === 'advanced') {
@@ -60,46 +66,65 @@ const getLevelClasses = (level) => {
 }
 
 const skills = [
-  { 
-    name: 'Laravel', 
-    icon: 'https://laravel.com/img/logomark.min.svg', 
-    levelKey: 'advanced' 
+  {
+    name: 'Laravel',
+    icon: '/assets/images/tech-laravel.svg',
+    levelKey: 'advanced'
   },
-  { 
-    name: 'NestJS', 
-    icon: 'https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg', 
-    levelKey: 'advanced' 
+  {
+    name: 'Spring Boot',
+    icon: '/assets/images/tech-spring.svg',
+    levelKey: 'advanced'
   },
-  { 
-    name: 'Express.js', 
-    // Utilisation d'une icone blanche pour le dark mode si besoin, ou standard
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png', 
-    levelKey: 'advanced' 
+  {
+    name: 'Vue.js',
+    icon: '/assets/images/tech-vuejs.svg',
+    levelKey: 'advanced'
   },
-  { 
-    name: 'WordPress', 
-    icon: 'https://s.w.org/style/images/about/WordPress-logotype-wmark.png', 
-    levelKey: 'advanced' 
+  {
+    name: 'React',
+    icon: '/assets/images/tech-react.svg',
+    levelKey: 'advanced'
   },
-  { 
-    name: 'Figma', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg', 
-    levelKey: 'advanced' 
+  {
+    name: 'NestJS',
+    icon: '/assets/images/tech-nestjs.svg',
+    levelKey: 'intermediate'
   },
-  { 
-    name: 'Nuxt.js', 
-    icon: 'https://nuxt.com/assets/design-kit/icon-green.svg', 
-    levelKey: 'intermediate' 
+  {
+    name: 'Tailwind CSS',
+    icon: '/assets/images/tech-tailwindcss.svg',
+    levelKey: 'advanced'
   },
-  { 
-    name: 'Flutter', 
-    icon: 'https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png', 
-    levelKey: 'intermediate' 
+  {
+    name: 'Nuxt.js',
+    icon: '/assets/images/tech-nuxtjs.svg',
+    levelKey: 'intermediate'
   },
-  { 
-    name: 'Git/GitHub', 
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg', 
-    levelKey: 'advanced' 
+  {
+    name: 'MySQL',
+    icon: '/assets/images/tech-mysql.svg',
+    levelKey: 'advanced'
+  },
+  {
+    name: 'PostgreSQL',
+    icon: '/assets/images/tech-postgresql.svg',
+    levelKey: 'intermediate'
+  },
+  {
+    name: 'Flutter',
+    icon: '/assets/images/tech-flutter.svg',
+    levelKey: 'intermediate'
+  },
+  {
+    name: 'WordPress',
+    icon: '/assets/images/tech-wordpress.svg',
+    levelKey: 'advanced'
+  },
+  {
+    name: 'Git & GitHub',
+    icon: '/assets/images/tech-git.svg',
+    levelKey: 'advanced'
   },
 ]
 </script>

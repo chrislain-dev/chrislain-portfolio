@@ -90,7 +90,7 @@ Ce projet met en avant mes compétences, expériences, et réalisations en tant 
 Envoyez-moi un message via le formulaire de contact ou par email :  
 - **E-mail :** chrislainavocegan1@gmail.com  
 - **LinkedIn :** [Chrislain Avocegan](https://www.linkedin.com/in/chrislain-avocegan-314273315)  
-- **Portfolio en ligne :** [chrislainavocegan.site](https://chrislainavocegan.site)
+- **Portfolio en ligne :** [chrislain-portfolio.vercel.app](https://chrislain-portfolio.vercel.app)
 
 ---
 
@@ -101,3 +101,56 @@ Ce projet est sous licence **MIT**. Vous pouvez librement l'utiliser, le modifie
 ---
 
 ### ✨ Développé avec passion par *Code with Chris*  
+
+---
+
+## Publier un article de blog
+
+Le blog ne dépend d'aucune base de données : un article = un fichier Markdown.
+
+1. Créer un fichier dans `src/content/blog/`, par exemple `mon-article.md`.
+   Le nom du fichier devient l'URL : `/blog/mon-article`.
+2. Commencer le fichier par cet en-tête :
+
+```markdown
+---
+title: Titre de l'article
+description: Une ou deux phrases de résumé, affichées dans la liste
+date: 2026-09-19
+tags: [Laravel, API]
+cover: /assets/images/mon-image.png
+lang: fr
+---
+
+Le contenu de l'article, en Markdown.
+```
+
+3. Committer et déployer. Le tri par date, le temps de lecture, les filtres par
+   sujet et les articles liés sont calculés automatiquement.
+
+## Mettre à jour les réalisations
+
+Les projets sont définis à un seul endroit : `src/data/projects.js`.
+Le champ `featured: true` place le projet sur la page d'accueil (6 maximum).
+Les descriptions longues des pages de détail sont dans
+`src/views/Works/WorkDetailView.vue`, repérées par le même `slug`.
+
+## Regénérer le CV PDF
+
+Le CV téléchargeable est construit à partir des fichiers de traduction, pour
+qu'il reste toujours aligné avec la page `/resume` :
+
+```bash
+npm run build:cv     # nécessite : pip install weasyprint
+```
+
+Sortie : `public/assets/cv/chrislain_avocegan_cv_{fr,en}.pdf`
+
+## Sitemap
+
+```bash
+npm run build && npm run build:sitemap
+```
+
+Génère `dist/sitemap.xml` et `dist/robots.txt`, articles de blog et pages
+projets inclus.

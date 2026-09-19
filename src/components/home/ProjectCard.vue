@@ -6,8 +6,9 @@
       <img 
         :src="project.image" 
         :alt="project.title" 
-        loading="lazy" 
-        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+        loading="lazy"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        @error="handleImageError"
       />
       
       <!-- Overlay Gradient (Darkens on hover) -->
@@ -58,13 +59,22 @@
 </template>
 
 <script setup>
-import { ExternalLink, Info, LayoutDashboard, Database, Globe, Smartphone, ShoppingBag } from 'lucide-vue-next'
+import {
+  ExternalLink, Info, LayoutDashboard, Database, Globe, Smartphone, ShoppingBag,
+  Package, Server, Briefcase, Calendar, Building2, Sparkles
+} from 'lucide-vue-next'
 
-const props = defineProps({
+defineProps({
   project: { type: Object, required: true }
 });
 
 defineEmits(['viewDetails']);
+
+// Image de repli si la capture du projet n'est pas (ou plus) disponible
+const handleImageError = (event) => {
+  if (event.target.src.includes('coming_soon')) return
+  event.target.src = '/assets/images/coming_soon.webp'
+};
 
 // Helper simple pour mapper les string icons vers les composants Lucide
 const getIcon = (name) => {
@@ -73,7 +83,13 @@ const getIcon = (name) => {
     'Database': Database,
     'Globe': Globe,
     'Smartphone': Smartphone,
-    'ShoppingBag': ShoppingBag
+    'ShoppingBag': ShoppingBag,
+    'Package': Package,
+    'Server': Server,
+    'Briefcase': Briefcase,
+    'Calendar': Calendar,
+    'Building2': Building2,
+    'Sparkles': Sparkles
   };
   return icons[name] || Globe; // Fallback
 };

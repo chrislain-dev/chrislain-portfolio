@@ -9,6 +9,6 @@ const routes = [
 
 export const configureWebpack = {
   plugins: [
-    new SitemapPlugin({ base: 'https://chrislainavocegan.site', paths: routes })
+    new SitemapPlugin({ base: 'https://chrislain-portfolio.vercel.app', paths: routes })
   ]
 };

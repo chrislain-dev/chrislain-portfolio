@@ -30,11 +30,14 @@
                 <Code :size="24" class="text-indigo-500" />
                 {{ t('resume.header.title') }}
               </h2>
+              <p class="mt-3 max-w-xl text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                {{ t('resume.header.tagline') }}
+              </p>
             </div>
 
             <!-- Quick Contact Chips -->
             <div class="flex flex-wrap gap-3 justify-center md:justify-end">
-              <a href="mailto:chrislainavocegan24@gmail.com" class="contact-chip">
+              <a href="mailto:chrislainavocegan1@gmail.com" class="contact-chip">
                 <Mail :size="14" />
                 <span>Email Me</span>
               </a>
@@ -75,7 +78,7 @@
           <div class="glass-card">
             <div class="card-header">
               <Terminal :size="20" class="text-emerald-500" />
-              <h3>{{ t('resume.skills.title') }}</h3>
+              <h3>{{ t('resume.hardSkills.title') }}</h3>
             </div>
             <div class="space-y-3">
               <div v-for="(skill, index) in skills" :key="index"
@@ -269,7 +272,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
 import {
@@ -293,141 +296,17 @@ const downloadResume = () => {
   showDialog.value = false
 }
 
-const educations = ref([])
-const experiences = ref([])
-const skills = ref([])
-const interests = ref([])
-
-const updateEducations = () => {
-  if (locale.value === 'en') {
-    educations.value = [
-      {
-        degree: "Bachelor's in Software Engineering",
-        institution: "IPG-ISTI, Dakar",
-        year: "2018 - 2021"
-      },
-      {
-        degree: "Scientific High School Diploma",
-        institution: "Porto-Novo, Benin",
-        year: "2016 - 2017"
-      }
-    ];
-
-    experiences.value = [
-      {
-        role: "Project Manager Laravel/NuxtJs",
-        company: "Nahema-Heaven Co.",
-        period: "Since February 2023",
-        details: [
-          "Project planning and schedule management",
-          "Resource and budget management",
-          "Risk management (identification and mitigation)"
-        ]
-      },
-      {
-        role: "WordPress Developer",
-        company: "Rohaya Holding, Rufisque",
-        period: "September 2022 - January 2023",
-        details: [
-          "Designing mockups with Figma",
-          "Building responsive websites with WordPress",
-          "Participating in project follow-up meetings"
-        ]
-      },
-      {
-        role: "Project Assistant Intern",
-        company: "PMD Developer, Dakar",
-        period: "February 2020 - June 2022",
-        details: [
-          "Backend development with PHP",
-          "Contributing to project plans development"
-        ]
-      }
-    ];
-
-    skills.value = [
-      "Languages and Frameworks: Laravel, Vue.js, WordPress",
-      "Design: Figma, Canvas",
-      "CSS Framework: Tailwind CSS"
-    ];
-
-    interests.value = [
-      "Reading",
-      "Roller-blading",
-      "Photography",
-      "Sports"
-    ];
-  } else {
-    educations.value = [
-      {
-        degree: "Licence en Génie Logiciel",
-        institution: "IPG-ISTI, Dakar",
-        year: "2018 - 2021"
-      },
-      {
-        degree: "Baccalauréat Série Scientifique",
-        institution: "Porto-Novo, Bénin",
-        year: "2016 - 2017"
-      }
-    ];
-
-    experiences.value = [
-      {
-        role: "Gestionnaire de projet Laravel/NuxtJs",
-        company: "Nahema-Heaven Co.",
-        period: "Février 2023 - Avril 2025",
-        details: [
-          "Élaboration du plan de projet et gestion des calendriers",
-          "Gestion des ressources et du budget",
-          "Gestion des risques (identification et réactions aux imprévus)"
-        ]
-      },
-      {
-        role: "Développeur WordPress",
-        company: "Rohaya Holding, Rufisque",
-        period: "Septembre 2022 - Janvier 2023",
-        details: [
-          "Élaboration de maquettes avec Figma",
-          "Création de sites web responsive avec WordPress",
-          "Participation aux réunions et suivi des projets"
-        ]
-      },
-      {
-        role: "Stagiaire Chargé de Projet",
-        company: "PMD Developer, Dakar",
-        period: "Février 2020 - Juin 2022",
-        details: [
-          "Développement backend avec PHP",
-          "Participation à l'élaboration des plans de projet"
-        ]
-      }
-    ];
-
-    skills.value = [
-      "Langages et Frameworks : Laravel, Vue.js, WordPress",
-      "Design : Figma, Canvas",
-      "CSS Framework : Tailwind CSS"
-    ];
-
-    interests.value = [
-      "Lecture",
-      "Roller-blade",
-      "Photographie",
-      "Sport"
-    ];
-  }
-}
-
-updateEducations()
-
-watch(locale, () => {
-  updateEducations()
-})
+// Toutes les données du CV viennent des fichiers de traduction (src/locales/*.json),
+// ce qui évite d'avoir deux versions du parcours à maintenir en parallèle.
+const educations = computed(() => tm('resume.education.items'))
+const experiences = computed(() => tm('resume.experience.items'))
+const skills = computed(() => tm('resume.hardSkills.items'))
+const interests = computed(() => tm('resume.interests.items'))
 
 useHead({
-  title: 'Resume - Code With Chris',
+  title: 'CV - Chrislain Avocegan',
   meta: [
-    { name: 'description', content: 'Découvrez le parcours professionnel de Chrislain AVOCEGAN.' }
+    { name: 'description', content: "Parcours, compétences et réalisations de Chrislain Avocegan, développeur full-stack Laravel, Spring Boot, Vue.js et React." }
   ]
 })
 </script>

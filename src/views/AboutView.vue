@@ -17,8 +17,7 @@
 
           <div class="hero-text opacity-0 transform translate-y-8">
             <p class="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-              <span class="font-semibold text-indigo-600 dark:text-indigo-400">// Zylo</span> - {{
-                t('about.description') }}
+              {{ t('about.description') }}
             </p>
 
             <div class="flex flex-wrap gap-3">
@@ -50,7 +49,7 @@
               class="absolute bottom-4 left-4 right-4 p-3 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-lg">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                <p class="text-xs font-semibold text-slate-900 dark:text-white">Open to Opportunities</p>
+                <p class="text-xs font-semibold text-slate-900 dark:text-white">{{ t('about.openToWork') }}</p>
               </div>
             </div>
           </div>
@@ -83,13 +82,13 @@
           <div class="story-section opacity-0">
             <div class="flex items-center gap-2 mb-4">
               <User :size="20" class="text-indigo-600 dark:text-indigo-400" />
-              <h2 class="text-2xl font-bold text-slate-900 dark:text-white">My Story</h2>
+              <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{{ t('about.story') }}</h2>
             </div>
-            <div class="prose dark:prose-invert text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-              <p>{{ truncatedStory }}</p>
+            <div class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm space-y-4">
+              <p v-for="(paragraph, index) in storyParagraphs" :key="index">{{ paragraph }}</p>
               <RouterLink to="/resume"
-                class="inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2">
-                Read more
+                class="inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 hover:underline text-sm pt-1">
+                {{ t('about.myResume') }}
                 <ArrowRight :size="14" />
               </RouterLink>
             </div>
@@ -182,28 +181,30 @@ const { t, tm } = useI18n()
 
 // SEO
 useHead({
-  title: computed(() => `${t('about.title')} - Zylo`),
+  title: computed(() => `${t('about.title')} - Chrislain Avocegan`),
   meta: [
     { name: 'description', content: computed(() => t('about.description')) }
   ]
 })
 
-// Truncated Story (max 280 characters)
-const truncatedStory = computed(() => {
-  const fullStory = t('about.longDescription')
-  const cleanStory = fullStory.replace(/<[^>]*>/g, '') // Remove HTML tags
-  return cleanStory.length > 280 ? cleanStory.substring(0, 280) + '...' : cleanStory
-})
+// Le parcours est découpé en paragraphes (séparés par une ligne vide dans les traductions)
+const storyParagraphs = computed(() =>
+  t('about.longDescription')
+    .replace(/<[^>]*>/g, '')
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+)
 
 // Stats Data
 const stats = computed(() => [
   {
-    value: '5+',
+    value: '8+',
     label: t('about.sections.workedYears.title'),
     icon: Clock
   },
   {
-    value: '20+',
+    value: '30+',
     label: t('about.sections.workedProjects.title'),
     icon: Rocket
   },
@@ -213,7 +214,7 @@ const stats = computed(() => [
     icon: Award
   },
   {
-    value: '30+',
+    value: '40+',
     label: t('about.sections.happyClients.title'),
     icon: Users
   }

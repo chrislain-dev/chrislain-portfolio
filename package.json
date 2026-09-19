@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "build:sitemap": "node generate-sitemap.js"
+    "build:sitemap": "node generate-sitemap.js",
+    "build:cv": "python3 tools/build_cv.py"
   },
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
