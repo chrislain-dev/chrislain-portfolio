@@ -24,7 +24,6 @@ const routes = [
   { path: '/post/:id', redirect: '/blog' },
   { path: '/tag/:id', redirect: '/blog' },
   { path: '/work/:slug', component: () => import('../views/Works/WorkDetailView.vue'), props: true },
-  { path: '/settings', component: () => import('../views/Dashboard/SettingsView.vue') },
   { path: '/:pathMatch(.*)*', component: () => import('../views/NotFound.vue') },
 ]
 
