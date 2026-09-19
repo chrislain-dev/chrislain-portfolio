@@ -63,7 +63,7 @@
   "about": {
     "title": "About Me",
     "description": "Full-stack developer based in Cotonou. I turn business needs into reliable web applications, from the data model to the interface.",
-    "longDescription": "My name is Chrislain Avocegan. I'm a full-stack developer and systems analyst with a bachelor's degree in software engineering. My work rarely starts with code: it starts with a conversation, a business process to understand and data to model properly. Then comes the technical part — a structured API with Laravel or Spring Boot, a clear interface with Vue.js or React, and a database designed to last.\n\nI currently work at WEBCOM SASU on the analysis, design and development of business applications, as well as their maintenance in production. Alongside that, I've supported small businesses and freelancers: stock management, e-commerce platforms with mobile money payments, marketing sites with a back office.\n\nWhat I look for in a project is clarity: code the next developer can read, screens users understand without training, and technical choices I can explain in plain words. Away from the keyboard, I skate, I read, and I tinker with interfaces in Figma.",
+    "longDescription": "My name is Chrislain Avocegan. I'm a full-stack developer and systems analyst with a bachelor's degree in software engineering. My work rarely starts with code: it starts with a conversation, a business process to understand and data to model properly. Then comes the technical part — a structured API with Laravel or Spring Boot, a clear interface with Vue.js or React, and a database designed to last.\n\nI currently work at WEBCOOM SASU on the analysis, design and development of business applications, as well as their maintenance in production. Alongside that, I've supported small businesses and freelancers: stock management, e-commerce platforms with mobile money payments, marketing sites with a back office.\n\nWhat I look for in a project is clarity: code the next developer can read, screens users understand without training, and technical choices I can explain in plain words. Away from the keyboard, I skate, I read, and I tinker with interfaces in Figma.",
     "myResume": "My Resume",
     "sections": {
       "workedYears": {
@@ -126,7 +126,7 @@
       "items": [
         {
           "role": "Full-Stack Developer (Spring Boot & Laravel)",
-          "company": "WEBCOM SASU",
+          "company": "WEBC0OM SASU",
           "period": "March 2026 - Present",
           "details": [
             "Requirements analysis and technical design of business applications",

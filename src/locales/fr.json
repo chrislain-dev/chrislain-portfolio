@@ -63,7 +63,7 @@
   "about": {
     "title": "A propos de moi",
     "description": "Développeur full-stack basé à Cotonou. Je transforme des besoins métier en applications web fiables, de la modélisation des données jusqu'à l'interface.",
-    "longDescription": "Je m'appelle Chrislain Avocegan. Je suis développeur full-stack et analyste-programmeur, titulaire d'une licence en génie logiciel. Mon travail commence rarement par du code : il commence par une conversation, un processus métier à comprendre et des données à modéliser correctement. Vient ensuite la partie technique — une API structurée avec Laravel ou Spring Boot, une interface claire avec Vue.js ou React, et une base de données pensée pour durer.\n\nJ'interviens aujourd'hui chez WEBCOM SASU sur l'analyse, la conception et le développement d'applications métier, ainsi que sur leur maintenance en production. En parallèle, j'ai accompagné en freelance des TPE et des indépendants : gestion de stock, plateformes e-commerce avec paiement mobile money, sites vitrines avec back-office.\n\nCe que je recherche dans un projet, c'est la clarté : un code lisible par la personne qui reprendra le projet après moi, des écrans que l'utilisateur comprend sans formation, et des choix techniques que je peux expliquer simplement. En dehors du clavier, je fais du roller, je lis et je bricole des interfaces sur Figma.",
+    "longDescription": "Je m'appelle Chrislain Avocegan. Je suis développeur full-stack et analyste-programmeur, titulaire d'une licence en génie logiciel. Mon travail commence rarement par du code : il commence par une conversation, un processus métier à comprendre et des données à modéliser correctement. Vient ensuite la partie technique — une API structurée avec Laravel ou Spring Boot, une interface claire avec Vue.js ou React, et une base de données pensée pour durer.\n\nJ'interviens aujourd'hui chez WEBCOOM SASU sur l'analyse, la conception et le développement d'applications métier, ainsi que sur leur maintenance en production. En parallèle, j'ai accompagné en freelance des TPE et des indépendants : gestion de stock, plateformes e-commerce avec paiement mobile money, sites vitrines avec back-office.\n\nCe que je recherche dans un projet, c'est la clarté : un code lisible par la personne qui reprendra le projet après moi, des écrans que l'utilisateur comprend sans formation, et des choix techniques que je peux expliquer simplement. En dehors du clavier, je fais du roller, je lis et je bricole des interfaces sur Figma.",
     "myResume": "Mon CV",
     "sections": {
       "workedYears": {
@@ -126,7 +126,7 @@
       "items": [
         {
           "role": "Développeur Full-Stack (Spring Boot & Laravel)",
-          "company": "WEBCOM SASU",
+          "company": "WEBCOOM SASU",
           "period": "Mars 2026 - Aujourd'hui",
           "details": [
             "Analyse des besoins et conception technique des applications métier",
